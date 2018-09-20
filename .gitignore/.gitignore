@@ -1,0 +1,34 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package formlogin;
+
+import javax.swing.*;
+
+public class FormLogin {
+    
+    public static void main(String[] args) {
+        // TODO code application logic here
+        JFrame myframe=new JFrame("Login Here");
+        JPanel mypanel=new JPanel();
+        JLabel Userlabel=new JLabel("Username:");
+        JTextField user=new JTextField();      
+        JLabel Pass=new JLabel("Password");
+        JPasswordField pass=new JPasswordField();
+        JButton login=new JButton("LOG IN");
+        mypanel.add(Userlabel);
+        mypanel.add(user);
+        mypanel.add(Pass);
+        mypanel.add(pass);
+        mypanel.add(login);
+        
+        user.setSize(40,50);
+        myframe.add(mypanel);
+        myframe.setSize(400,300);
+        myframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        myframe.setVisible(true); 
+        
+    }
+}
